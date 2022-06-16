@@ -4,13 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Weather Dashboard</title>
 </head>
+
 <body>
-    
+<!--Header-->
+    <header class="text-center bg-info">
+        <h1>Weather Dashboard</h1>
+    </header>
 
+<main class="container-fluid">
 
+<!--City Search Modal-->
+<div class="row">
+    <div class="col-4">
+        <div class="card">
+            <form class="card-body" id="search-form">
+                <h2>Search for a City</h2>
+                <input class="card-text" id="search-input" placeholder="Enter City Name"></input>
+                <button type="submit" class="btn-primary" id="search-btn" >Search</button>
+            </form>
+        </div>
+<!--Previous Searches-->
+        <div class="card">
+            <ul id="prev-search"></ul>
+        </div>
+    </div>
+</div>
+<!--Current Search City-->
+<div class="col-8">
+    <div class="card" id="current-search">
+        <div class="card-body">
+            <h2 class="card-title" id="city-name"></h2>
+            <img id="weather-icon">
+            <h3 class="card-text" id="current-temp"></h3>
+            <h3 class="card-text" id="current-wind"></h3>
+            <h3 class="card-text" id="current-humidity"></h3>
+            <span id="badge-color"><h3 class="card-text" id="current-uv"></h3></span>
+        </div>
+    </div>
+<!--Forecast Cards-->
+<div class="row">
+    <div class="col">
+        <div class="card" id="forecast">
+            <h3 class="card-title">5-Day Forecast</h3>
+            <div class="card-deck">
+            <!--Day 1-->
+                <div class="card">
+                    <div class="card-body" id="day-1">
+                        <h4 id="day-1-date" class="card-title"></h4>
+                        <img id="day-1-icon">
+                        <p class="card-text" id="day-1-temp"></p>
+                        <p class="card-text" id="day-1-wind"></p>
+                        <p class="card-text" id="day-1-humidity"></p>
+                    </div>
+                </div>
+            <!--Day 2-->
+                <div class="card">
+                    <div class="card-body" id="day-2">
+                        <h4 id="day-2-date" class="card-title"></h4>
+                        <img id="day-2-icon">
+                        <p class="card-text" id="day-2-temp"></p>
+                        <p class="card-text" id="day-2-wind"></p>
+                        <p class="card-text" id="day-2-humidity"></p>
+                    </div>
+                </div>
+            <!--Day 3-->
+                <div class="card">
+                    <div class="card-body" id="day-3">
+                        <h4 id="day-3-date" class="card-title"></h4>
+                        <img id="day-3-icon">
+                        <p class="card-text" id="day-3-temp"></p>
+                        <p class="card-text" id="day-3-wind"></p>
+                        <p class="card-text" id="day-3-humidity"></p>
+                    </div>
+                </div>
+            <!--Day 4-->
+                <div class="card">
+                    <div class="card-body" id="day-4">
+                        <h4 id="day-4-date" class="card-title"></h4>
+                        <img id="day-4-icon">
+                        <p class="card-text" id="day-4-temp"></p>
+                        <p class="card-text" id="day-4-wind"></p>
+                        <p class="card-text" id="day-4-humidity"></p>
+                    </div>
+                </div>
+            <!--Day 5-->
+                <div class="card">
+                    <div class="card-body" id="day-5">
+                        <h4 id="day-5-date" class="card-title"></h4>
+                        <img id="day-5-icon">
+                        <p class="card-text" id="day-5-temp"></p>
+                        <p class="card-text" id="day-5-wind"></p>
+                        <p class="card-text" id="day-5-humidity"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
