@@ -20,7 +20,7 @@
 <!--City Search Modal-->
 <div class="row">
     <div class="col-4">
-        <div class="card">
+        <div class="card p-3 mb-5">
             <form class="card-body" id="search-form">
                 <h2>Search for a City</h2>
                 <input class="card-text" id="search-input" placeholder="Enter City Name"></input>
@@ -29,13 +29,13 @@
         </div>
 <!--Previous Searches-->
         <div class="card">
-            <ul id="prev-search"></ul>
+            <ul id="prev-search" class="list-group-flush list-group"></ul>
         </div>
     </div>
-</div>
+
 <!--Current Search City-->
 <div class="col-8">
-    <div class="card" id="current-search">
+    <div class="card p-3 mb-5" id="current-search">
         <div class="card-body">
             <h2 class="card-title" id="city-name"></h2>
             <img id="weather-icon">
@@ -48,7 +48,7 @@
 <!--Forecast Cards-->
 <div class="row">
     <div class="col">
-        <div class="card" id="forecast">
+        <div class="card p-3 mb-5" id="forecast">
             <h3 class="card-title">5-Day Forecast</h3>
             <div class="card-deck">
             <!--Day 1-->
