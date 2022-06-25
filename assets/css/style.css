@@ -1,0 +1,10 @@
+body {
+    font-family: monospace;
+    background: radial-gradient(circle, hsla(185, 93%, 73%, 1) 0%, hsla(60, 89%, 72%, 1) 100%);
+}
+
+.title {
+    font-weight: bold;
+    background: rgb(82, 182, 154);
+    padding: 15px
+}
